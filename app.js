@@ -8,6 +8,8 @@ import adminRouter from "./routes/adminRouter";
 
 const app = express();
 
+app.set("view engine", "pug");
+
 app.use(helmet());
 app.use(logger("dev"));
 

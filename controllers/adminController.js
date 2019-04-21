@@ -4,6 +4,7 @@ export const admin = (req,res) => {
     res.send("admin app");
 }
 
-export const product = (req,res) => {
-    res.send("product page");
+export const products = (req,res) => {
+    const message = "hello"
+    res.render("products", {message});
 }
