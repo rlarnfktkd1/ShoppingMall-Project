@@ -5,6 +5,5 @@ export const admin = (req,res) => {
 }
 
 export const products = (req,res) => {
-    const message = "hello"
-    res.render("products", {message});
+    res.render("products", {pageTitle: '제품리스트'});
 }
